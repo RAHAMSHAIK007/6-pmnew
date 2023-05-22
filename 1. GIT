@@ -1,0 +1,92 @@
+DAY-01:
+
+
+yum install git -y : to installg
+git init  					: to initalize repo
+touch file1					: to create a file
+git status					: to check the file status
+git add filename		: to track the file
+git commit -m ""		: to save the tracked file
+git log							: to list the commits
+git restore --staged: to untrack the tracked files
+
+TO CONFIGURE USER & EMAIL:
+git config user.name "raham"
+git config user.email "raham@gmail.com"
+
+GIT IGNORE:
+
+create some python files 
+
+vim .gitignore
+p* --- > :wq
+git status
+
+git log --oneline				: to show logs on single line
+git log --oneline -2		: to show last 2 logs on single line
+git show commit-id			: to show the files for the commits
+
+
+HISTORY:
+
+1  mkdir swiggy
+    2  cd swiggy/
+    3  yum install git -y
+    4  git --version
+    5  git -v
+    6  ls -a
+    7  git init
+    8  pwd
+    9  ll
+   10  ls -a
+   11  touch java1
+   12  git status
+   13  git add java1
+   14  git status
+   15  git commit -m "first commit" java1
+   16  git status
+   17  ll
+   18  git log
+   19  touch java2
+   20  git status
+   21  git add java2
+   22  git status
+   23  git commit -m "second commits" java2
+   24  git log
+   25  git config user.name "raham"
+   26  git config user.email "raham@gmail.com"
+   27  git log
+   28  ll
+   29  touch java{3..8}
+   30  ll
+   31  git status
+   32  git add *
+   33  git status
+   34  git commit -m "third commit" *
+   35  git log
+   36  touch java9
+   37  git status
+   38  git add java9
+   39  git status
+   40  git restore --staged java9
+   41  git status
+   42  git add java9
+   43  git status
+   44  git restore --staged java9
+   45  git status
+   46  ll
+   47  touch python{1..5}
+   48  ll
+   49  git status
+   50  vim .gitignore
+   51  git status
+   52  ll
+   53  vim .gitignore
+   54  git status
+   55  ll
+   56  git log
+   57  git log --oneline
+   58  git log --oneline -2
+   59  git log --oneline
+   60  git show eb855f5
+   61  history
